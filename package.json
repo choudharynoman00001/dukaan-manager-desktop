@@ -21,10 +21,10 @@
     "files": [
       "main.js",
       "offline.html",
-      "8-icon.png"
+      "icon-app.png"
     ],
     "win": {
-      "icon": "8-icon.png",
+      "icon": "icon-app.png",
       "signAndEditExecutable": true,
       "target": [
         "nsis",

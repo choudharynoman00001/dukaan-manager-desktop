@@ -1,10 +1,10 @@
 {
   "name": "dukaan-manager",
   "version": "1.0.0",
-  "description": "Dukaan Manager desktop",
+  "description": "Dukaan Manager desktop - Developer by Noman Powered by alpha blue digital",
   "main": "main.js",
   "author": {
-    "name": "Noman Powered by alpha blue",
+    "name": "Developer by Noman Powered by alpha blue digital",
     "email": "support@alphablue.digital"
   },
   "license": "UNLICENSED",
@@ -40,7 +40,7 @@
       "deleteAppDataOnUninstall": false,
       "artifactName": "Dukaan-Manager-Setup.${ext}"
     },
-    "copyright": "Noman Powered by alpha blue",
+    "copyright": "Developer by Noman Powered by alpha blue digital",
     "portable": {
       "artifactName": "Dukaan-Manager-Portable.exe"
     }

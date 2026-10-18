@@ -1,0 +1,52 @@
+{
+  "name": "dukaan-manager",
+  "version": "1.0.0",
+  "description": "Dukaan Manager desktop",
+  "main": "main.js",
+  "author": {
+    "name": "Noman Powered by alpha blue",
+    "email": "support@alphablue.digital"
+  },
+  "license": "UNLICENSED",
+  "scripts": {
+    "dist": "electron-builder --win --x64 --publish never"
+  },
+  "build": {
+    "appId": "digital.alphablue.dukaan",
+    "productName": "Dukaan Manager",
+    "artifactName": "Dukaan-Manager-Setup.${ext}",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "main.js",
+      "offline.html",
+      "8-icon.png"
+    ],
+    "win": {
+      "icon": "8-icon.png",
+      "signAndEditExecutable": true,
+      "target": [
+        "nsis",
+        "portable"
+      ]
+    },
+    "nsis": {
+      "oneClick": true,
+      "perMachine": false,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Dukaan Manager",
+      "deleteAppDataOnUninstall": false,
+      "artifactName": "Dukaan-Manager-Setup.${ext}"
+    },
+    "copyright": "Noman Powered by alpha blue",
+    "portable": {
+      "artifactName": "Dukaan-Manager-Portable.exe"
+    }
+  },
+  "devDependencies": {
+    "electron": "^33.2.0",
+    "electron-builder": "^25.1.8"
+  }
+}

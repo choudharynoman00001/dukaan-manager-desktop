@@ -14,6 +14,9 @@ jobs:
         with:
           node-version: 22
       - run: npm install --no-audit --no-fund
+      - name: Decode icon
+        shell: bash
+        run: base64 -d icon.b64 > icon-app.png
       - run: npx electron-builder --win --x64 --publish never
       - uses: actions/upload-artifact@v4
         with:

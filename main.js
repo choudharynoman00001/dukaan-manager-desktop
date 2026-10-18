@@ -5,7 +5,7 @@ if (!app.requestSingleInstanceLock()) app.quit();
 let win;
 function create() {
   Menu.setApplicationMenu(null);
-  win = new BrowserWindow({ width: 1200, height: 800, minWidth: 380, minHeight: 560, title: 'Dukaan Manager', icon: path.join(__dirname, '8-icon.png'), backgroundColor: '#faf8f5', webPreferences: { contextIsolation: true, sandbox: true } });
+  win = new BrowserWindow({ width: 1200, height: 800, minWidth: 380, minHeight: 560, title: 'Dukaan Manager', icon: path.join(__dirname, 'icon-app.png'), backgroundColor: '#faf8f5', webPreferences: { contextIsolation: true, sandbox: true } });
   win.loadURL(URL_APP);
   win.webContents.on('did-fail-load', (e, code, desc, url, isMain) => { if (isMain && code !== -3) win.loadFile(path.join(__dirname, 'offline.html')); });
   // links to other sites (WhatsApp etc.) open in the normal browser
